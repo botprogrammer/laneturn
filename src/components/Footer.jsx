@@ -54,7 +54,7 @@ export default function Footer() {
       <hr className="my-6 border-gray-400 lg:my-8" />
       <span className="block text-sm text-gray-500 sm:text-center text-gray-600">
         © 2022{" "}
-        <a href="https://flowbite.com/" className="text-gray-700">
+        <a onClick={() => navigate("/")} className="text-gray-700">
           Lane Turn
         </a>
         . All Rights Reserved.
