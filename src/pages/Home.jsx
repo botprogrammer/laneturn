@@ -9,8 +9,10 @@ import airConditioner7 from "../assets/airConditioner7.jpg";
 import energyEfficiency from "../assets/energyEfficiency.png";
 import environmentalSafety from "../assets/environmentalSafety.png";
 import airQuality from "../assets/airQuality.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div className="body px-4">
       <section className="text-gray-600 body-font main sm:px-4 md:px-20">
@@ -36,7 +38,8 @@ export default function Home() {
             <div className="flex justify-center">
               <button
                 style={{ border: "1px solid rgb(99, 102, 241)" }}
-                className="inline-flex px-3 py-1 text-white bg-indigo-500 border-0 focus:outline-none hover:bg-indigo-600"
+                className="inline-flex px-4 py-2 text-white bg-indigo-500 border-0 focus:outline-none hover:bg-indigo-600"
+                onClick={() => navigate("/shop")}
               >
                 See Products
               </button>
@@ -45,7 +48,8 @@ export default function Home() {
                   border: "1px solid rgb(99, 102, 241)",
                   color: "rgb(99, 102, 241)",
                 }}
-                className="ml-4 inline-flex px-3 py-1 bg-gray-100 border-0 focus:outline-none"
+                className="ml-4 inline-flex px-4 py-2 bg-gray-100 border-0 focus:outline-none"
+                onClick={() => navigate("/contact")}
               >
                 Contact Us
               </button>
