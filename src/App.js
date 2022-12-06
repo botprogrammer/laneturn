@@ -22,7 +22,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop />} />
-          <Route path="/shop/:id" element={<SingleShop />} />
+          <Route path="/shop/1" element={<SingleShop />} />
+          <Route path="/shop/2" element={<SingleShop />} />
         </Routes>
       </Layout>
     </Router>

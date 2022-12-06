@@ -1,154 +1,58 @@
 import React from "react";
+import shop1 from "../assets/shop1.webp";
+import shop2 from "../assets/shop2.webp";
+import { useNavigate } from "react-router-dom";
 
 export default function Shop() {
+  const navigate = useNavigate();
   return (
     <div className="body">
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font p-4 md:p-20">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap -m-4">
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
+          <div className="flex flex-wrap -mx-4 -mb-10 text-center">
+            <div className="sm:w-1/2 mb-10 px-4">
+              <div className="rounded-lg h-64 overflow-hidden">
                 <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/420x260"
+                  alt="content"
+                  className="object-cover object-center h-full w-full"
+                  src={shop1}
                 />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">
-                  The Catalyzer
-                </h2>
-                <p className="mt-1">$16.00</p>
               </div>
+              <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+                1.5 ton 3 Star Inverter Split Air Conditioner
+              </h2>
+              {/* <p className="leading-relaxed text-base">
+                Williamsburg occupy sustainable snackwave gochujang. Pinterest
+                cornhole brunch, slow-carb neutra irony.
+              </p> */}
+              <button
+                onClick={() => navigate("/shop/1")}
+                className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"
+              >
+                See More
+              </button>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
+            <div className="sm:w-1/2 mb-10 px-4">
+              <div className="rounded-lg h-64 overflow-hidden">
                 <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/421x261"
+                  alt="content"
+                  className="object-cover object-center h-full w-full"
+                  src={shop2}
                 />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Shooting Stars
-                </h2>
-                <p className="mt-1">$21.15</p>
               </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/422x262"
-                />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Neptune
-                </h2>
-                <p className="mt-1">$12.00</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/423x263"
-                />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">
-                  The 400 Blows
-                </h2>
-                <p className="mt-1">$18.40</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/424x264"
-                />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">
-                  The Catalyzer
-                </h2>
-                <p className="mt-1">$16.00</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/425x265"
-                />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Shooting Stars
-                </h2>
-                <p className="mt-1">$21.15</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/427x267"
-                />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Neptune
-                </h2>
-                <p className="mt-1">$12.00</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/428x268"
-                />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">
-                  The 400 Blows
-                </h2>
-                <p className="mt-1">$18.40</p>
-              </div>
+              <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+                1 ton 3 Star Inverter Split Air Conditioner
+              </h2>
+              {/* <p className="leading-relaxed text-base">
+                Williamsburg occupy sustainable snackwave gochujang. Pinterest
+                cornhole brunch, slow-carb neutra irony.
+              </p> */}
+              <button
+                onClick={() => navigate("/shop/1")}
+                className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"
+              >
+                See More
+              </button>
             </div>
           </div>
         </div>

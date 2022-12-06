@@ -39,10 +39,14 @@ export default function About() {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  Our Vision
+                  Customers Are Our First Priority
                 </h2>
                 <p className="leading-relaxed text-base">
-                  To be India’s most preferred air conditioning company.
+                  Our approach as a company is to keep the dialogue ongoing and
+                  to listen. Then act. The innovations we’ve developed
+                  throughout the years in the cooling industries are a direct
+                  result of that process. And we have a long list of industry
+                  firsts to show for it, with more to come.
                 </p>
               </div>
             </div>
@@ -62,11 +66,21 @@ export default function About() {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  Our Mission #1
+                  Well Known For Quality
                 </h2>
                 <p className="leading-relaxed text-base">
-                  To contribute to the society by providing the most advanced
-                  air-conditioning solutions.
+                  LaneTurn is an industry leader for total cooling solutions. In
+                  fact, laneturn is one of the few brands with product offerings
+                  covering residential and commercial cooling, conventional
+                  replacement parts and accessories for all categories – making
+                  us a one-stop solutions provider. All laneturn cooling
+                  products meet and exceed rigorous industry standards for
+                  quality and reliability. From raw material delivery to
+                  finished product assembly, each phase in the manufacturing
+                  process is effectively overseen to ensure the highest quality
+                  in air conditioner manufacturing. Lanturn products are
+                  frequently tested and certified by various government and
+                  third-party testing labs to ensure quality standards.
                 </p>
                 {/* <a className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
@@ -100,10 +114,13 @@ export default function About() {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  Our Mission #2
+                  Quality Policy
                 </h2>
                 <p className="leading-relaxed text-base">
-                  To ensure continuous customer satisfaction.
+                  It is our policy to promote a culture of continual improvement
+                  that is committed to exceeding customer expectations and
+                  requirements, by providing products and services of excellent
+                  quality.
                 </p>
               </div>
             </div>
@@ -127,12 +144,49 @@ export default function About() {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  Our Mission #3
+                  Wide Range Of Cooling Solutions
                 </h2>
                 <p className="leading-relaxed text-base">
-                  To establish Laneturn Brand as a brand of trust and
-                  confidence, which our customers and channel partners believe
-                  in.
+                  Today’s economy isn’t about product lines; it’s about product
+                  solutions. It isn’t about the number of models or the
+                  capacity, but how you can use these various products to meet
+                  the equally various demands of each application. Whatever your
+                  interests or needs; whatever your cooling application,
+                  laneturn has a reliable, cost-effective solution to meet it.
+                  LaneTurn is your one-stop source for all your cooling needs.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.5rem"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                >
+                  <path fill="currentColor" d="M21 20v10l9-5l-9-5z" />
+                  <circle cx={14} cy={14} r={2} fill="currentColor" />
+                  <path
+                    fill="currentColor"
+                    d="M14 20a6 6 0 1 1 6-6a6.007 6.007 0 0 1-6 6Zm0-10a4 4 0 1 0 4 4a4.005 4.005 0 0 0-4-4Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M25.951 12.91h-.006A12.05 12.05 0 1 0 17 25.605v-2.066a9.981 9.981 0 1 1 6.623-6.81l1.925.544A12.034 12.034 0 0 0 26 14q0-.55-.049-1.09Z"
+                  />
+                </svg>
+              </div>
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  World Class Customer Support
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Customer support is priority one at LaneTurn. We are dedicated
+                  to providing timely and accurate support for your peace of
+                  mind. Consumers rely on our support for warranty details and
+                  basic product information. Dealers and Contractors rely on us
+                  for technical assistance and application support.
                 </p>
               </div>
             </div>
