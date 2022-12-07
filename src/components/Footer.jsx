@@ -24,7 +24,7 @@ export default function Footer() {
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <a className="text-gray-500">
             <svg
-              fill="currentColor"
+              fill="#14B8A6"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
@@ -36,7 +36,7 @@ export default function Footer() {
           </a>
           <a className="ml-3 text-gray-500">
             <svg
-              fill="currentColor"
+              fill="#14B8A6"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
@@ -49,7 +49,7 @@ export default function Footer() {
           <a className="ml-3 text-gray-500">
             <svg
               fill="none"
-              stroke="currentColor"
+              stroke="#14B8A6"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
@@ -62,8 +62,8 @@ export default function Footer() {
           </a>
           <a className="ml-3 text-gray-500">
             <svg
-              fill="currentColor"
-              stroke="currentColor"
+              fill="#14B8A6"
+              stroke="#14B8A6"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={0}

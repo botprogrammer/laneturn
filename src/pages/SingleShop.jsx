@@ -22,8 +22,8 @@ export default function SingleShop() {
               <div className="flex mb-4">
                 <span className="flex items-center">
                   <svg
-                    fill="currentColor"
-                    stroke="currentColor"
+                    fill="#14B8A6"
+                    stroke="#14B8A6"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
@@ -33,8 +33,8 @@ export default function SingleShop() {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                   <svg
-                    fill="currentColor"
-                    stroke="currentColor"
+                    fill="#14B8A6"
+                    stroke="#14B8A6"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
@@ -44,19 +44,8 @@ export default function SingleShop() {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                   <svg
-                    fill="currentColor"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 text-indigo-500"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
+                    fill="#14B8A6"
+                    stroke="#14B8A6"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
@@ -67,7 +56,18 @@ export default function SingleShop() {
                   </svg>
                   <svg
                     fill="none"
-                    stroke="currentColor"
+                    stroke="#14B8A6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    className="w-4 h-4 text-indigo-500"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                  <svg
+                    fill="none"
+                    stroke="#14B8A6"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
@@ -81,7 +81,7 @@ export default function SingleShop() {
                 <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
                   <a className="text-gray-500">
                     <svg
-                      fill="currentColor"
+                      fill="#14B8A6"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
@@ -93,7 +93,7 @@ export default function SingleShop() {
                   </a>
                   <a className="text-gray-500">
                     <svg
-                      fill="currentColor"
+                      fill="#14B8A6"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
@@ -105,7 +105,7 @@ export default function SingleShop() {
                   </a>
                   <a className="text-gray-500">
                     <svg
-                      fill="currentColor"
+                      fill="#14B8A6"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
@@ -144,7 +144,7 @@ export default function SingleShop() {
                     <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
                       <svg
                         fill="none"
-                        stroke="currentColor"
+                        stroke="#14B8A6"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
@@ -167,18 +167,21 @@ export default function SingleShop() {
                     viewBox="0 0 24 24"
                   >
                     <path
-                      fill="currentColor"
+                      fill="#14B8A6"
                       d="M10.5 14h-.73l5.1 5.31c.61.64.16 1.69-.72 1.69c-.27 0-.53-.11-.72-.31L7.4 14.41c-.26-.26-.4-.62-.4-.98c0-.79.64-1.43 1.43-1.43h2.07c1.76 0 3.22-1.3 3.46-3H7c-.55 0-1-.45-1-1s.45-1 1-1h6.66c-.56-1.18-1.76-2-3.16-2H7c-.55 0-1-.45-1-1s.45-1 1-1h10c.55 0 1 .45 1 1s-.45 1-1 1h-2.26c.48.58.84 1.26 1.05 2H17c.55 0 1 .45 1 1s-.45 1-1 1h-1.02c-.26 2.8-2.62 5-5.48 5z"
                     />
                   </svg>
                   38,990/-
                 </span>
-                <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+                <button
+                  style={{ background: "#14B8A6" }}
+                  className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
+                >
                   Buy Now
                 </button>
                 {/* <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
                   <svg
-                    fill="currentColor"
+                    fill="#14B8A6"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
@@ -210,10 +213,10 @@ export default function SingleShop() {
           </div>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
             <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+              <div className="w-20 h-20 inline-flex items-center justify-center rounded-full  text-indigo-500 mb-5 flex-shrink-0">
                 <svg
                   fill="none"
-                  stroke="currentColor"
+                  stroke="#14B8A6"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
@@ -236,7 +239,7 @@ export default function SingleShop() {
                   Learn More
                   <svg
                     fill="none"
-                    stroke="currentColor"
+                    stroke="#14B8A6"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
@@ -249,10 +252,10 @@ export default function SingleShop() {
               </div>
             </div>
             <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+              <div className="w-20 h-20 inline-flex items-center justify-center rounded-full  text-indigo-500 mb-5 flex-shrink-0">
                 <svg
                   fill="none"
-                  stroke="currentColor"
+                  stroke="#14B8A6"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
@@ -277,7 +280,7 @@ export default function SingleShop() {
                   Learn More
                   <svg
                     fill="none"
-                    stroke="currentColor"
+                    stroke="#14B8A6"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
@@ -290,10 +293,10 @@ export default function SingleShop() {
               </div>
             </div>
             <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+              <div className="w-20 h-20 inline-flex items-center justify-center rounded-full  text-indigo-500 mb-5 flex-shrink-0">
                 <svg
                   fill="none"
-                  stroke="currentColor"
+                  stroke="#14B8A6"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
@@ -317,7 +320,7 @@ export default function SingleShop() {
                   Learn More
                   <svg
                     fill="none"
-                    stroke="currentColor"
+                    stroke="#14B8A6"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
