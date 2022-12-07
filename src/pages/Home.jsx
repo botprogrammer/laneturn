@@ -6,24 +6,50 @@ import airConditioner4 from "../assets/airConditioner4.jpg";
 import airConditioner5 from "../assets/airConditioner5.jpg";
 import airConditioner6 from "../assets/airConditioner6.jpg";
 import airConditioner7 from "../assets/airConditioner7.jpg";
-import energyEfficiency from "../assets/energyEfficiency.png";
-import environmentalSafety from "../assets/environmentalSafety.png";
-import airQuality from "../assets/airQuality.png";
 import warranty from "../assets/warrenty.jfif";
 import { useNavigate } from "react-router-dom";
-import { Dialog, DialogTitle, DialogContent } from "@mui/material";
+import { Dialog, DialogContent } from "@mui/material";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Box } from "@mui/material";
 
 export default function Home() {
+  let screenSize = window.innerWidth;
   const [open, setOpen] = useState(false);
+  const [size, setSize] = useState(screenSize);
   const navigate = useNavigate();
+  const changeWindowWidth = () => {
+    setSize(window.innerWidth);
+  };
+  window.onresize = changeWindowWidth;
+
+  const getCarouselWidth = () => {
+    if (size >= 1600) {
+      return 700;
+    } else if (size >= 1400) {
+      return 600;
+    } else if (size >= 1200) {
+      return 500;
+    } else if (size >= 1024) {
+      return 400;
+    } else if (size >= 768) {
+      return 600;
+    } else if (size >= 600) {
+      return 500;
+    } else if (size >= 500) {
+      return 400;
+    } else if (size >= 400) {
+      return 350;
+    } else {
+      return 300;
+    }
+  };
+
   return (
     <div className="body px-4">
-      <section className="text-gray-600 body-font main sm:px-4 md:px-20">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <section className="text-gray-600 body-font main sm:px-4 lg:px-20">
+        <div className="container mx-auto flex px-5 py-24 lg:flex-row flex-col items-center">
+          <div className="lg:flex-grow lg:w-1/2 lg:pr-24 mr-2 lg:mr-8 flex flex-col lg:items-start lg:text-left mb-16 lg:mb-0 items-center text-center">
             <h1 className="text-2xl sm:text-3xl md:text-4xl mb-4 font-bold text-gray-900">
               Welcome To{" "}
               <span style={{ color: "rgb(99 102 241)" }}>LaneTurn</span>
@@ -64,22 +90,28 @@ export default function Home() {
             sx={{
               "& div": {
                 // width: "20rem",
+                width: "100%",
+                height: "100%",
               },
             }}
           >
-            <Carousel showStatus={false} width={400} showIndicators={false}>
+            <Carousel
+              showStatus={false}
+              width={getCarouselWidth()}
+              showIndicators={false}
+            >
               <div
-                className="lg:max-w-lg lg:w-full md:w-1/2"
+                // className="lg:max-w-lg lg:w-full md:w-full"
                 style={{
                   // height: "15rem",
-                  aspectRatio: "4/2",
+                  // aspectRatio: "4/2",
                   backgroundImage: `url(${airConditioner4})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
               ></div>
               <div
-                className="lg:max-w-lg lg:w-full md:w-1/2 "
+                // className="lg:max-w-lg lg:w-full md:w-1/2 "
                 style={{
                   // width: rem",
                   // height: "15rem",
@@ -90,7 +122,7 @@ export default function Home() {
                 }}
               ></div>
               <div
-                className="lg:max-w-lg lg:w-full md:w-1/2 "
+                // className="lg:max-w-lg lg:w-full md:w-1/2 "
                 style={{
                   // width: rem",
                   // height: "15rem",
@@ -101,7 +133,7 @@ export default function Home() {
                 }}
               ></div>
               <div
-                className="lg:max-w-lg lg:w-full md:w-1/2 "
+                // className="lg:max-w-lg lg:w-full md:w-1/2 "
                 style={{
                   // width: rem",
                   // height: "15rem",
@@ -112,7 +144,7 @@ export default function Home() {
                 }}
               ></div>
               <div
-                className="lg:max-w-lg lg:w-full md:w-1/2 "
+                // className="lg:max-w-lg lg:w-full md:w-1/2 "
                 style={{
                   // width: rem",
                   // height: "15rem",
@@ -174,7 +206,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-            <div className="p-8 md:p-20 md:w-1/2 flex flex-col text-center items-center">
+            <div className="p-8 lg:p-20 md:w-1/2 flex flex-col text-center items-center">
               <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -221,7 +253,7 @@ export default function Home() {
                 </a> */}
               </div>
             </div>
-            <div className="p-8 md:p-20 md:w-1/2 flex flex-col text-center items-center">
+            <div className="p-8 lg:p-20 md:w-1/2 flex flex-col text-center items-center">
               <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -251,10 +283,11 @@ export default function Home() {
                   LaneTurn has it covered with the finest air conditioners in
                   the business—top-quality, innovative cooling solutions with
                   the latest technology and dependable performance—all backed by
-                  great warranties and excellent service and support. If you
+                  great warranties and excellent service and support.
+                  {/* If you
                   have any questions on which LaneTurn air conditioner is the
                   best for your home, just reach out to a trustworthy,
-                  independent LaneTurn Pro in your area.
+                  independent LaneTurn Pro in your area. */}
                 </p>
                 {/* <a className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
